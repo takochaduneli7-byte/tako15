@@ -8,7 +8,49 @@
     <script src="./app.js"type="module" defer></script>
 </head>
 <body>
- 
-  
+    <section class="container">
+    <div class="slider-wrapper">
+        <div class="slides">
+            <div class="slide active">
+                <div class="image-clock-wrapper">
+                    <img src="./img/საათი.png" alt="საათი" class="clock-img-bg">
+                    <div class="live-digits">
+                        <span id="h">00</span>:<span id="m">00</span>:<span id="s">00</span>
+                        <span id="ap">PM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./img/img1.avif" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/img2vif.avif" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/img3.jpeg" alt="">
+            </div>
+
+        </div>
+        <div class="slide-btns">
+            <button id="prev">prev</button>
+            <button id="next">next</button>
+        </div>
+        <div class="pagination-btns">
+            <button data-slide-number="1" class="active"></button>
+            <button data-slide-number="2"></button>
+            <button data-slide-number="3"></button>
+            <button data-slide-number="4"></button>
+        </div>
+    </div>
+    <div class="countdown-container">
+        <h3>მომდევნო ლექციამდე დარჩენილია:</h3>
+        <div id="countdown">
+            <span id="cd-days">0</span> დღე 
+            <span id="cd-hours">00</span> საათი 
+            <span id="cd-minutes">00</span> წუთი 
+            <span id="cd-seconds">00</span> წამი
+        </div>
+    </div>
+</section>
 </body>
 </html>
